@@ -1,0 +1,50 @@
+body{
+    color: white;
+    
+    background-color: #8D72E1;
+    
+}
+form,h3{
+text-align: center;  
+}
+h3{
+letter-spacing: 1px;
+font-size: 30px;
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+}
+#p{
+font-family: 'Roboto', sans-serif;  
+word-spacing: 3px;
+}
+div{
+margin:  30px 50px;
+/* border: 3px solid white;  */
+}
+#submit{
+font-size:20px ;
+padding: 15px 100px;
+border-radius: 5px;
+color: white;
+background-color: black;
+border: none;
+margin-top: 20px;
+}
+#submit:hover{
+border: white;
+background-color:rgb(15, 90, 255);
+}
+#input{
+height: 30px;
+width: 450px;
+
+}
+p{
+margin-bottom: -10px;
+}
+.Subtitle{
+text-align: left;
+width: fit-content;
+margin: 50px auto;
+font-size: 1.2rem;
+}

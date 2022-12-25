@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    
+</head>
+<body>
+    <div class="dashboard">
+        <div class="profile">
+          <img src="depositphotos_14779185-stock-photo-confident-young-student-back-to.jpg" alt="Profile Image">
+          <h1>Rohan Kumar</h1>
+          <p>Student ID: 123456</p>
+          <p>Email: student@school.edu</p>
+          <p>Level 1</p>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Grades</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <!-- Content for selected menu item will be displayed here -->
+        </div>
+  </div>
+
+      <a href="registration.html" class="button">Check your level</a>
+      <script src="dashboard.js">
+        // Get the menu elements
+const menuItems = document.querySelectorAll(".menu li");
+
+// Add a click event listener to each menu item
+menuItems.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    // Remove the active class from all menu items
+    menuItems.forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    // Add the active class to the clicked menu item
+    event.target.classList.add("active");
+
+    // Load the content for the selected menu item
+    loadContent(event.target.textContent);
+  });
+});
+
+function loadContent(menuItem) {
+  // Fetch the content for the selected menu item
+  fetch(`/${menuItem.toLowerCase()}.html`)
+    .then((response) => response.text())
+    .then((content) => {
+      // Update the content div with the new content
+      document.querySelector(".content").innerHTML = content;
+    });
+}
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+.dashboard {
+    display: flex;
+    background-color:#8D72E1;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+  }
+  
+  .profile {
+    flex: 0 0 25%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .menu {
+    flex: 0 0 15%;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .menu li {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #444;
+  }
+  
+  .menu li.active a {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  .button {
+    background-color: #6C4AB6;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    width: 60px;
+    position: relative;
+    left: 700px;
+    top: 70px;
+  }
+  

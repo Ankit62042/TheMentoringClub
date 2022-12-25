@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor</title>
+    <link rel="stylesheet" href="mentor.css">
+</head>
+<body>
+    <h1>MENTORS</h1>
+    <div id="mentor-list">
+        
+        <div class="mentor-card">
+          <img src="jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg" alt="Mentor 1" class="mentor-image">
+          <h3 class="mentor-name">Stephanie Liverani</h3>
+          <p class="mentor-bio">I have been fortunate to have great mentors who have helped me with my professional and personal progression. This is my way to give back. I enjoy seeing people grow in their roles and feel humbled in contributing to their success.</p>
+        </div>
+        <div class="mentor-card">
+          <img src="dr-terrence-underwood-Io0eEAfSMjY-unsplash.jpg" alt="Mentor 2" class="mentor-image">
+          <h3 class="mentor-name">Brooke Cagle</h3>
+          <p class="mentor-bio">My driving force is to Love, Serve, Educate. Mentoring encompasses all 3 aspects. One can guide, help, motivate, and grow from the experience.</p>
+        </div>
+        <div class="mentor-card">
+          <img src="stephanie-liverani-Zz5LQe-VSMY-unsplash.jpg" alt="Mentor 3" class="mentor-image">
+          <h3 class="mentor-name">Jonas Kakaroto</h3>
+          <p class="mentor-bio">The opportunity to mentor an individual with a desire to learn and grow fulfills my personal goal to leverage my capabilities, talents, and insights to others.</p>
+        </div>
+        <div class="mentor-card">
+          <img src="christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" alt="Mentor 3" class="mentor-image">
+          <h3 class="mentor-name">Dr. Terrence Underwood</h3>
+          <p class="mentor-bio">As a mentor, I will be able to impart knowledge and experience while gaining a better working knowledge of the current workforce and challenges.</p>
+        </div>
+        <div class="mentor-card">
+            <img src="christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" alt="Mentor 3" class="mentor-image">
+            <h3 class="mentor-name">Dr. Terrence Underwood</h3>
+            <p class="mentor-bio">As a mentor, I will be able to impart knowledge and experience while gaining a better working knowledge of the current workforce and challenges.</p>
+          </div>
+      </div>
+    <script>const mentorCards = document.querySelectorAll(".mentor-card");
+
+        mentorCards.forEach((mentorCard) => {
+          mentorCard.addEventListener("click", () => {
+            mentorCard.classList.toggle("expanded");
+          });
+        });</script>
+</body>
+</html>

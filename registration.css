@@ -1,0 +1,25 @@
+body{
+    background-color: #8D72E1;
+    color: white;
+}
+label{
+    font-size: 20px;
+}
+form{
+    background-color: #B9E0FF;
+    padding-left: 50px;
+}
+#button{
+    width: 400px;
+    position: relative;
+    left: 60px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.result{
+    position: relative;
+    left: 700px;
+    top: 10px;
+    background-color: #8D72E1;
+    font-size: 40px;
+}
